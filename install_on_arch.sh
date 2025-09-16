@@ -29,7 +29,7 @@ echo -e  "\n [ Install necessery packages ] \n"
 sudo pacman -S dracut ly bluez zsh --noconfirm
 
 echo -e "\n [ Install recommended cli-applications ] \n"
-sudo pacman -S base-devel git neovim yazi bc unzip zip 7zip unrar btop ffmpeg imagemagick ripgrep fastfetch --noconfirm
+sudo pacman -S base-devel git neovim vi yazi bc unzip zip 7zip unrar btop ffmpeg imagemagick ripgrep fastfetch --noconfirm
 
 echo -e  "\n [ Install wayland and grafic-drivers packages ] \n"
 sudo pacman -S mesa wayland xorg-xwayland qt6-wayland qt5-wayland --noconfirm
