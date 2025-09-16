@@ -113,7 +113,7 @@ echo -e  "\n [ install gtk themes ] \n"
 if [ ! -d ~/.themes ]; then
     mkdir ~/.themes
 fi
-cp themes/* ~/.themes
+cp themes/* ~/.themes -r 
 
 echo -e  "\n [ install Oh-My-Zsh ] \n"
 sudo chsh -s /bin/zsh $USER
