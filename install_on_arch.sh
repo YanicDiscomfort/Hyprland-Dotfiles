@@ -123,8 +123,8 @@ N
 EOF
 cp zshrc ~/.zshrc
 
-echo -e \n Installation Complete \n now you should reboot!\n and dont forget to switch to Hyprland (uwsm managed) in ly-dm \n
-echo -e \n reboot now? [y/n] \n
+echo -e "\n Installation Complete \n now you should reboot!\n and dont forget to switch to Hyprland (uwsm managed) in ly-dm \n"
+echo -e "\n reboot now? [y/n] \n"
 read reb
 
 if [ $reb == "y" ]; then
