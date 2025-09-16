@@ -88,9 +88,10 @@ fi
 echo -e  "\n [ Enable Display-Manager (ly-dm) ] \n"
 sudo systemctl enable ly
 
-echo -e  "\n [ enable polkit and waybar ] \n"
+echo -e  "\n [ enable polkit, hyprpaper and waybar ] \n"
 systemctl --user enable --now hyprpolkitagent.service
 systemctl --user enable --now waybar.service
+systemctl --user enable --now hyprpaper.service
 
 echo -e  "\n [ install dotfiles ] \n"
 mkdir ~/.dotfiles
@@ -122,4 +123,10 @@ N
 EOF
 cp zshrc ~/.zshrc
 
-reboot
+echo -e \n Installation Complete \n now you should reboot!\n and dont forget to switch to Hyprland (uwsm managed) in ly-dm \n
+echo -e \n reboot now? [y/n] \n
+read reb
+
+if [ $reb == "y" ]; then
+    reboot
+fi
