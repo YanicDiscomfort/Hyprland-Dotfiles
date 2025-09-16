@@ -22,7 +22,7 @@ git clone https://github.com/YanicDiscomfort/Hyprland-Dotfiles && cd Hyprland-Do
 
 run the install script as root
 ```sh
-sudo ./install_on_arch.sh
+chmod +x install_on_arch.sh && ./install_on_arch.sh
 ```
 
 ----
