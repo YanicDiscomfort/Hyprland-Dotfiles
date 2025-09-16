@@ -7,6 +7,8 @@ alias dc="cd"
 alias lsa="ls -a"
 alias lsl="ls -l"
 alias vim="nvim"
+alias gti="git"
+alias mkir="mkdir"
 
 # [ OH-MY-ZSH ]
 
