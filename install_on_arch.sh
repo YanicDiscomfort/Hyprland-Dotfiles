@@ -94,11 +94,13 @@ systemctl --user enable --now waybar.service
 systemctl --user enable --now hyprpaper.service
 
 echo -e  "\n [ install dotfiles ] \n"
-mkdir ~/.dotfiles
-cp flavours/ ~/.dofiles -r 
+if [ ! -d ~/.dotfiles ]; then
+    mkdir ~/.dotfiles
+fi
+cp flavours/ ~/.dofiles/ -r 
 
 echo -e  "\n [ apply Catppuccin-Flavour as Default ] \n"
-cp -rf config/* ~/.config
+cp -rf config/* ~/.config/
 
 echo -e  "\n [ install icons and cursor ] \n"
 if [ ! -d ~/.icons ]; then
